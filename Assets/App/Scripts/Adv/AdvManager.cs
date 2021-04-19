@@ -70,13 +70,7 @@ namespace Adv
 			EventManager.Instance.Setup();
 
 			// View 
-			if (_view == null)
-			{
-				_view = AdvView.Create(_trsWindowRoot);
-				_view.SetActive(true);
-			}
-
-			_view.SetActive(false);
+			_view.gameObject.SetActive(false);
 			_view.Setup();
 
 

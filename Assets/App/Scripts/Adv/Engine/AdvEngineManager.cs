@@ -173,7 +173,7 @@ namespace Adv.Engine
 
 			OnFinish?.Invoke();
 
-			_view?.SetActive(false);
+			_view?.gameObject.SetActive(false);
 		}
 
 		/// <summary>

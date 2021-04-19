@@ -15,7 +15,7 @@ namespace Adv
 	/// <summary>
 	/// 
 	/// </summary>
-	public class AdvView : Utility.ObjCreator<AdvView>
+	public class AdvView : MonoBehaviour
 	{
 		#region 定数, class, enum
 
@@ -47,18 +47,7 @@ namespace Adv
 
 		#region public, protected 関数
 
-		public static string PrefabName()
-		{
-			return Common.GetResourcePath("AdvMain");
-		}
-
-		public static bool IsAwakeActive()
-		{
-			return false;
-		}
-
-
-		public override void Setup()
+		public void Setup()
 		{
 			_window.Setup();
 			_select.Setup();
