@@ -100,7 +100,7 @@ namespace Adv.Engine.Command
 		/// </summary>
 		public override IEnumerator Process()
 		{
-			var charaManager = Engine.Manager.Instance.Chara;
+			var charaManager = Engine.AdvEngineManager.Instance.Chara;
 
 			// 指定したキャラが居るか
 			var charaName = _values[0];

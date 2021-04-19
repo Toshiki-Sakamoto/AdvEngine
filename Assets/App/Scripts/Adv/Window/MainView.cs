@@ -63,13 +63,13 @@ namespace Adv.Window
 		void Awake()
 		{
 			// テキストを追加
-			Adv.Utility.EventManager.SafeAdd<EventAddText>(this,
+			Utility.EventManager.SafeAdd<EventAddText>(this,
 				(ev_) =>
 				{
 					_txtMain.text += ev_.Text;
 				});
 
-			Adv.Utility.EventManager.SafeAdd<EventSetText>(this,
+			Utility.EventManager.SafeAdd<EventSetText>(this,
 				(ev_) =>
 				{
 					_txtMain.SetDocument(ev_.Document);
@@ -78,14 +78,14 @@ namespace Adv.Window
 
 				});
 
-			Adv.Utility.EventManager.SafeAdd<EventNextText>(this,
+			Utility.EventManager.SafeAdd<EventNextText>(this,
 				(ev_) =>
 				{
 					_txtMain.SetLengthOfView(ev_.next);
 				});
 
 			// Window削除
-			Adv.Utility.EventManager.SafeAdd<EventWindowClear>(this,
+			Utility.EventManager.SafeAdd<EventWindowClear>(this,
 				(ev_) =>
 				{
 					_txtMain.text = "";
@@ -111,7 +111,7 @@ namespace Adv.Window
 		/// </summary>
 		void OnDestroy()
 		{
-			Adv.Utility.EventManager.SafeAllRemove(this);
+			Utility.EventManager.SafeAllRemove(this);
 		}
 
 		#endregion

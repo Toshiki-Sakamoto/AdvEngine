@@ -148,7 +148,7 @@ namespace Adv.Engine.Command
 		/// <returns>The process.</returns>
 		public override IEnumerator Process()
 		{
-			var manager = Engine.Manager.Instance;
+			var manager = Engine.AdvEngineManager.Instance;
 
 			switch (_scriptType)
 			{

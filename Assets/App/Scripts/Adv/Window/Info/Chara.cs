@@ -47,12 +47,12 @@ namespace Adv.Window.Info
 		/// 文字情報
 		/// </summary>
 		/// <value></value>
-		public Data.Chara Data { get; set; }
+		public Data.AdvDataChara Data { get; set; }
 
 		/// <summary>
 		/// 文字情報
 		/// </summary>
-		public Data.Chara.CustomInfo CustomInfo { get { return Data.Info; } }
+		public Data.AdvDataChara.CustomInfo CustomInfo { get { return Data.Info; } }
 
 		/// <summary>
 		/// 実際の文字
@@ -163,7 +163,7 @@ namespace Adv.Window.Info
 
 		#region コンストラクタ, デストラクタ
 
-		public Chara(Data.Chara c, TextConfig config)
+		public Chara(Data.AdvDataChara c, TextConfig config)
 		{
 			_textConfig = config;
 
@@ -323,7 +323,7 @@ namespace Adv.Window.Info
 
 		#region private 関数
 
-		private void Init(Data.Chara charData, Font font, int fontSize, int bmpFontSize, FontStyle fontStyle, float spacing)
+		private void Init(Data.AdvDataChara charData, Font font, int fontSize, int bmpFontSize, FontStyle fontStyle, float spacing)
 		{
 			Data = charData;
 

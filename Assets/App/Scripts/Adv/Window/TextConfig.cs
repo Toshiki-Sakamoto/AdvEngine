@@ -40,7 +40,7 @@ namespace Adv.Window
 		[SerializeField] private int _bmpFontSize = 0;
 		[SerializeField] private float _letterSpaceSize = 1;    // 文字間(px)
 		[SerializeField] private float _space = -1;             // スペースの幅(px)
-		[SerializeField] private Utility.WordProcessor _wordProcessor = null;
+		[SerializeField] private WordProcessor _wordProcessor = null;
 		[SerializeField] private char _dashChar = '—';
 		[SerializeField] private int _lengthOfView = -1;        // 表示する文字の長さ
 
@@ -132,7 +132,7 @@ namespace Adv.Window
 		/// <summary>
 		/// 禁則処理
 		/// </summary>
-		public Utility.WordProcessor WordProcessor { get { return _wordProcessor; } }
+		public WordProcessor WordProcessor { get { return _wordProcessor; } }
 
 		/// <summary>
 		/// テキストを更新させる

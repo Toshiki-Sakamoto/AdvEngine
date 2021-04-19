@@ -244,7 +244,7 @@ namespace Adv.Engine.Command
 				});
 
 			// 速度によって送るスピードが変わる
-			var config = Config.Manager.Instance;
+			var config = Config.AdvConfigManager.Instance;
 
 			if (config.TextSpeed >= 1.0f)
 			{
@@ -277,7 +277,7 @@ namespace Adv.Engine.Command
 			do
 			{
 				// 途中でタップがあったら一瞬で
-				if (Engine.Manager.Instance.IsTap)
+				if (Engine.AdvEngineManager.Instance.IsTap)
 				{
 
 					/*

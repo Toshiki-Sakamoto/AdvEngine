@@ -8,11 +8,11 @@ namespace Adv
 		public override void InstallBindings()
 		{
 			Container
-				.Bind<Manager>()
+				.Bind<AdvManager>()
 				.FromComponentInHierarchy().AsSingle();
 
 			Container
-				.Bind<Engine.Manager>()
+				.Bind<Engine.AdvEngineManager>()
 				.FromComponentInHierarchy().AsSingle();
 		}
 	}

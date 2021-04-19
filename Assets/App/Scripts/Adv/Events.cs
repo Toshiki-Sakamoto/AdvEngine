@@ -47,7 +47,7 @@ namespace Adv
 	/// <summary>
 	/// イベント管理者
 	/// </summary>
-	public class EventManager : Adv.Utility.Singleton<EventManager>
+	public class EventManager : Utility.Singleton<EventManager>
 	{
 		private Dictionary<Type, EventStackBase> _dictEvents = new Dictionary<Type, EventStackBase>();
 

@@ -91,7 +91,7 @@ namespace Adv.Engine.Command
 		/// <returns>The process.</returns>
 		public override IEnumerator Process()
 		{
-			var manager = Engine.Manager.Instance;
+			var manager = Engine.AdvEngineManager.Instance;
 			var chara = manager.Chara;
 
 			chara.LoadFace(_name, _dictFaceKey);

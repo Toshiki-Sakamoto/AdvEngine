@@ -100,7 +100,7 @@ namespace Adv.Engine.Command
 
 		public override IEnumerator Process()
 		{
-			var manager = Engine.Manager.Instance;
+			var manager = Engine.AdvEngineManager.Instance;
 
 			manager.GotoLabel(LabelRef);
 

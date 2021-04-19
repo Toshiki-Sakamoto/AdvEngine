@@ -55,7 +55,7 @@ namespace Adv
 			public string Name { get; private set; }
 			public List<Attribute> Attributes { get; private set; } = new List<Attribute>();
 
-			public List<Data.Chara> Charas { get; private set; } = new List<Data.Chara>();
+			public List<Data.AdvDataChara> Charas { get; private set; } = new List<Data.AdvDataChara>();
 
 
 			public void SetBeginTag(Tag tag)
@@ -209,7 +209,7 @@ namespace Adv
 			/// <summary>
 			/// タグの処理を行う
 			/// </summary>
-			public bool ParseTag(Data.Chara.CustomInfo customInfo, bool isBegin)
+			public bool ParseTag(Data.AdvDataChara.CustomInfo customInfo, bool isBegin)
 			{
 				int result = 0;
 
@@ -341,7 +341,7 @@ namespace Adv
 			{
 				Text += c;
 
-				var data = new Data.Chara(c);
+				var data = new Data.AdvDataChara(c);
 
 				Charas.Add(data);
 			}
@@ -349,7 +349,7 @@ namespace Adv
 			/// <summary>
 			/// 描画用の文字情報に変換する
 			/// </summary>
-			public void BuildCharacters(Data.Chara.CustomInfo customInfo, TextConfig config)
+			public void BuildCharacters(Data.AdvDataChara.CustomInfo customInfo, TextConfig config)
 			{
 				// タグの場合は情報保持クラスに格納していく
 				if (Type == Type.Begin)
@@ -539,7 +539,7 @@ namespace Adv
 		/// タグを処理した結果、色の変更やサイズ変更の値を保持するクラス
 		/// こいつを渡していく
 		/// </summary>
-		public Data.Chara.CustomInfo CustomInfo { get; private set; } = new Data.Chara.CustomInfo();
+		public Data.AdvDataChara.CustomInfo CustomInfo { get; private set; } = new Data.AdvDataChara.CustomInfo();
 
 		/// <summary>
 		/// 描画情報をリストにまとめたもの

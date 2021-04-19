@@ -50,14 +50,14 @@ namespace Adv.Window
 
 
 			// Window消す
-			Adv.Utility.EventManager.SafeAdd<EventNameWindowHide>(this,
+			Utility.EventManager.SafeAdd<EventNameWindowHide>(this,
 				(ev_) =>
 				{
 					gameObject.SetActive(false);
 				});
 
 			// 名前を設定する
-			Adv.Utility.EventManager.SafeAdd<EventNameSet>(this,
+			Utility.EventManager.SafeAdd<EventNameSet>(this,
 				(ev_) =>
 				{
 					gameObject.SetActive(true);
@@ -102,7 +102,7 @@ namespace Adv.Window
 		/// </summary>
 		void OnDestroy()
 		{
-			Adv.Utility.EventManager.SafeAllRemove(this);
+			Utility.EventManager.SafeAllRemove(this);
 		}
 
 		#endregion
