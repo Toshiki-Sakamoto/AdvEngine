@@ -4,10 +4,10 @@
 //  
 // Created by toshiki sakamoto on 2020.06.03
 // 
-using Utility.Extensions;
+using Adv.Utility.Extensions;
 using UnityEngine;
 
-namespace Utility
+namespace Adv.Utility
 {
 	/// <summary>
 	/// オブジェクトが削除された時を検知する

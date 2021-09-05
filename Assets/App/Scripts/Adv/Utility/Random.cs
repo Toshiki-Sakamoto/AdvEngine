@@ -14,7 +14,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace Utility
+namespace Adv.Utility
 {
 	/// <summary>
 	/// 

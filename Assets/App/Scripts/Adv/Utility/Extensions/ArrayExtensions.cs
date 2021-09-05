@@ -14,7 +14,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace Utility.Extensions
+namespace Adv.Utility.Extensions
 {
 	/// <summary>
 	/// Array 拡張クラス

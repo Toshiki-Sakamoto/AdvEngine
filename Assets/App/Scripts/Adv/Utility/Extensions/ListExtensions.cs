@@ -15,7 +15,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace Utility.Extensions
+namespace Adv.Utility.Extensions
 {
 	/// <summary>
 	/// Listの拡張メソッド
