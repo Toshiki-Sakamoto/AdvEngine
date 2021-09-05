@@ -1,0 +1,17 @@
+{
+    "name": "com.toshizabeth.adv",
+    "displayName": "Adv Engine", 
+    "version": "1.0.0",               
+    "unity": "2021.1",
+    "description": "アドベンチャー再生システム",
+    "author": {
+        "name": "Toshizabeth",
+        "url": "https://github.com/Toshizabeth"
+    },
+
+    "keywords": [
+    ],
+
+    "dependencies": {
+    }
+}
