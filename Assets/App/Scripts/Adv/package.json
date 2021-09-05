@@ -1,7 +1,7 @@
 {
     "name": "com.toshizabeth.adv",
     "displayName": "Adv Engine", 
-    "version": "1.0.0",               
+    "version": "1.0.1",               
     "unity": "2021.1",
     "description": "アドベンチャー再生システム",
     "author": {
