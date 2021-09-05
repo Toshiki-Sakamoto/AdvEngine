@@ -102,7 +102,7 @@ namespace Adv.Utility.Extensions
 		{
 			if (list.IsNullOrEmpty()) return default(T);
 
-			return list[Utility.Random.Range(list.Count())];
+			return list[Adv.Utility.Random.Range(list.Count())];
 		}
 
 		/// <summary>
@@ -133,7 +133,7 @@ namespace Adv.Utility.Extensions
 			var range = Enumerable.Range(0, self.Count)
 				.Where(index_ => index_ != index);
 
-			index = range.ElementAt(Utility.Random.Range(self.Count - 1));
+			index = range.ElementAt(Adv.Utility.Random.Range(self.Count - 1));
 			result = self[index];
 
 			return true;
